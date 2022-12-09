@@ -52,6 +52,31 @@ function getLocation() {
 getLocation()
 
 
+const reqCity = await  determineIP()
+
+//console.log('okey', reqCity.location.city)
+console.log('okey',reqCity)
+
+async  function determineIP (){
+    const URL = `https://geo.ipify.org/api/v2/country,city?apiKey=at_j7ORR9WWSPn9DslGWWQmzJn7PNWRq&ip`
+    let promise = await fetch(URL)
+    const data = await promise.json()
+    return data.location.city
+}
+
+const call = callNameCity(reqCity)
+console.log(call)
+
+async function callNameCity (city){
+    const key = 'ee0974e840afecf7dccad218cf9a5207'
+    const URL =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`
+    let promise = await fetch(URL)
+    const data = await  promise.json()
+    return data
+}
+
+
+
 
 function searchCity (){
     /*<input id="search" type="text" placeholder="Type your city here">*/
