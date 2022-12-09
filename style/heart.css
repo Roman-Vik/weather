@@ -6,5 +6,28 @@
     text-align: center;
 }
 .heart__degreeCelsius{
-
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 87px;
+    color: #FFFFFF;
+}
+.heart__locations{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+}
+.heart__btn{
+    font-family: 'Mulish', sans-serif;
+    font-size: 17px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+    background: none;
 }
