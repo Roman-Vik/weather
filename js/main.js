@@ -27,7 +27,6 @@ async function showPosition(position) {
         const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&exclude=${exclude}&appid=${key}`
         const promise = await fetch(URL)
         const data = await promise.json()
-
         return await  data
     }
     //возвращаю данные
@@ -79,13 +78,15 @@ async  function determineIP (){
 
 /*=2====================Получаем погоду по найденому городу  =============================*/
 const call = await callNameCity(reqCity)
-//console.log(call)
+console.log(call)
+
+
 async function callNameCity (city){
     const key = 'ee0974e840afecf7dccad218cf9a5207'
     const URL =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`
     let promise = await fetch(URL)
     const data = await  promise.json()
-    return  await data.main.temp
+    return data.main.temp
 }
 /*==================================================*/
 
@@ -104,3 +105,12 @@ function searchCity (){
 }
 btn.addEventListener('click', searchCity)
 /*============================================*/
+
+/*=======input вводим город===================================*/
+
+
+function enterCity(event){
+  let data =  event.target.value
+    console.log(data)
+}
+input.addEventListener('blur', enterCity)
