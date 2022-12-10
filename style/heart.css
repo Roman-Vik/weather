@@ -1,4 +1,4 @@
-.heart{
+.heart {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -9,22 +9,24 @@
     align-items: center;
 
 }
-.heart > input{
-    text-align:center;
+
+.heart > input {
+    text-align: center;
     padding-bottom: 6px;
     margin: 44px;
     border: none;
-    background: rgba( 0,0,0,.0);
+    background: rgba(0, 0, 0, .0);
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 36px;
     color: rgba(255, 255, 255, 0.7);
-    border-bottom: 1px solid  rgba(255, 255, 255, 0.75);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.75);
     outline: none;
 }
-.heart > input::placeholder{
+
+.heart > input::placeholder {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -34,7 +36,7 @@
 }
 
 
-.heart__degreeCelsius{
+.heart__degreeCelsius {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -43,12 +45,18 @@
     color: #FFFFFF;
 }
 
-.heart__degreeCelsius-error{
+.heart__degreeCelsius-error {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+
 }
 
-.heart__locations{
+.heart__locations {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -59,12 +67,17 @@
 }
 
 
-.heart__locations-err  {
-    opacity: 0.75;
+.heart__locations-err {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
 }
-.heart__btn{
+
+.heart__btn {
     font-family: 'Mulish', sans-serif;
     font-size: 17px;
     line-height: 28px;
@@ -73,8 +86,9 @@
     border: none;
     background: none;
 }
-.btn__heart-err{
-    border:none;
+
+.btn__heart-err {
+    border: none;
     background-color: white;
     width: 140px;
     height: 48px;
@@ -87,7 +101,7 @@
     line-height: 36px;
 }
 
-btn__tryAgain{
+btn__tryAgain {
 
     background: #FFFFFF;
     border-radius: 8px;

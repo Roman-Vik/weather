@@ -1,0 +1,12 @@
+// temperature.innerHTML= 'Ooops. Something went wrong.'
+// temperature.className = 'heart__degreeCelsius-error'
+// // temperature.style.fontWeight = "400px"
+// // temperature.style.fontSize = "20px"
+// // temperature.style.lineHeight = "36px"
+// city.innerHTML = 'Error info'
+// // city.style.opacity = '0.75'
+// // city.style.fontWeight = "400px"
+// // city.style.fontSize = "12px"
+// // city.style.lineHeight = "15px"
+// btn.className = 'btn__heart-err'
+// btn.textContent = 'Try again'
